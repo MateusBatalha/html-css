@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Monoton&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: #B3EFF2;
+    --cor1: #00BFFC;
+    --cor2: #0584E6;
+    --cor3: #0562FC;
+    --cor4: #0731F2;
+
+    --fonte-titulo: 'Monoton';
+    --fonte-padrão: 'Creepster';
+
+
+      
+}
+
+body {
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2));
+}
+
+header {
+    text-align: end;
+    padding: 40px;
+
+}
+
+header > h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 3em;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.452);
+}
+
+nav {
+    background-color: var(--cor0);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.308);
+}
+
+nav  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    display: inline-block;
+    margin-left: 0px;
+    padding: 10px;
+}
+
+nav > a:hover {
+    background-color: #00BFFC;
+    border-radius: 40px;
+    transition: 0.3s;
+    color: var(--cor4);
+    
+
+}
+
+main {
+    padding: 20px;
+    min-width: 320px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+main article {
+    font-family: var(--fonte-padrão);
+    margin: auto;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.349);
+    border-radius: 5px;
+}
+
+.mini {
+    font-size: 0.7em;
+}
+
+div {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+footer {
+    background-color: var(--cor4);
+    color: #ffffff;
+    text-align: center;
+    padding: 7px;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de imagens</title>
+</head>
+<body>
+    <h1>Blatterfield 3</h1>
+    <p>Testando a imagem em dispositivos diferentes.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem-teste/foto-pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagem-teste/foto-media.png" type="image/png">
+        <img src="imagem-teste/foto-grande.png" alt="imagem padrão">
+    </picture>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/Go-NEFFEX.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>

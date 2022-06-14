@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture> <!--sempre coloque o source acima do outro-->
+        <source media="(max-width: 300px)" srcset="image/foto-menor.png" type="image/png"> <!--sendo menor que 300px, carregará então foto-menor.png(menor ainda)-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <!--se for menor que 750px, carregará então foto-p.png(pequena)-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--se a foto for menor que 1050px, carregará então a foto-m.png(media)-->
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio no HTML5</p>
+    <audio src="midia/Go-NEFFEX.mp3" controls autoplay></audio>
+    <!--formatos compatíveis: mp3, wav, ogg.-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+    </audio>
+    <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para o download.</a></p>
+</body>
+</html>
