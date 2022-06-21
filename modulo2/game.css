@@ -62,19 +62,19 @@ nav > a {
 }
 
 nav > a:hover {
-    background-color: #5a00c963;
+    background-color: var(--cor1);
+    transition: 0.25s;
 }
 
 main {
     background-color: var(--cor0);
-    max-width: 1000px;
-    min-width: 320px;
+    max-width: 1200px;
+    min-width: 300px;
     margin: auto;
     text-align: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.39);
 }
+
 
 main h2 {
     padding: 10px;
@@ -98,4 +98,22 @@ div img {
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.418);
 }
 
+img:hover {
+    width: 300px;
+}
 
+img {
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--cor2);
+    color: var(--cor0);
+    padding: 7px;
+    max-width: 1188px;
+    min-width: 300px;
+    margin: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
