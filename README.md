@@ -2,3 +2,7 @@
  curso de html 5
 
  Estou aprendendo a gerenciar os repositórios.
+ 
+ Cordel Moderno sozinho: https://mateusbatalha.github.io/site-cordel-alone/
+ Projeto Android: https://mateusbatalha.github.io/projeto-android/
+ Site Cordel com Guanabara: https://mateusbatalha.github.io/Cordel-Guanabara/
