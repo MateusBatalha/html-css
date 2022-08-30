@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+    <style>
+        .conteudo-field {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="cadastro.php">
+        <fieldset class="conteudo-field">
+            <legend>Sexo</legend>
+            <div><input type="radio" name="sexo" id="Isxmas"> <label for="Isxmas">Masculino</label></div>
+            <div><input type="radio" name="sexo" id="Isxfem"> <label for="Isxfem">Feminino</label></div>
+            <!--Todo botão de radio (input: radio) tem que ter o mesmo name (1 - name= "sexo"
+                2 - name= "sexo".)-->
+        </fieldset>
+
+        <fieldset class="conteudo-field"><legend>Esportes favoritos</legend>
+            <div><input type="checkbox" name="esfut" id="Iesfut"> <label for="Iesfut">Futebol</label></div>
+            <div><input type="checkbox" name="esbas" id="Iesbas"> <label for="Iesbas">Basquete</label></div>
+            <div><input type="checkbox" name="esnat" id="Iesnat"> <label for="Iesnat">Natação</label></div>
+            <div><input type="checkbox" name="esvol" id="Iesvol"> <label for="Iesvol">Volei</label></div>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
